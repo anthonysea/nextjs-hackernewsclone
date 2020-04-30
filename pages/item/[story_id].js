@@ -1,15 +1,20 @@
 import fetch from 'node-fetch'
 import Layout from '../../components/Layout'
+import StoryCard from '../../components/StoryCard'
+import Comment from '../../components/Comment'
 
 
 export default function Comments({ story }) {
     return (
         <Layout>
-            <h2>{ story.title }</h2>
+            <StoryCard story={ story }/>
+            <br />
+            { story.comments.map(comment => {
+                return <Comment comment={comment}/>
+            })}
         </Layout>
     )
 }
-
 
 
 export async function getServerSideProps({ params }) {
