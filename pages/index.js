@@ -6,7 +6,6 @@ import StoryCard from '../components/StoryCard'
 const DEFAULT_TITLE = "Hacker News Clone"
 
 export default function Home({ stories }) {
-  console.log(stories)
 
   return (
     <Layout title={DEFAULT_TITLE}>

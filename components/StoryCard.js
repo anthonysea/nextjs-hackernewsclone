@@ -11,7 +11,11 @@ export default function StoryCard({ story }) {
             <div className="text-gray-700 col-start-2 col-span-12 text-xs md:text-xl"><a href={ story.url }>{ story.title }</a></div>
 
             <div className="text-gray-500 col-start-2 col-span-3 text-xs md:text-sm">submitted by { story.user }</div>
-            <div className="text-gray-700 col-start-5 col-span-3 text-xs md:text-sm">{ story.comments_count } comments</div>
+            <div className="text-gray-700 col-start-5 col-span-3 text-xs md:text-sm">
+                <Link href="/item/[story_id]" as={`/item/${story.id}`}>
+                    <a className="hover:underline">{ story.comments_count } comments</a>
+                </Link> 
+            </div>
 
         </div>
     )
