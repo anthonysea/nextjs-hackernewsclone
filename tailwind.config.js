@@ -1,7 +1,7 @@
-module.exports = {
-    theme: {
-        fontSize: {
-            'base': '.925rem'
-        }
-    }
-}
+// module.exports = {
+//     theme: {
+//         fontSize: {
+//             'comment': '.95rem'
+//         }
+//     }
+// }
