@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "autoprefixer": "^9.7.6",
     "next": "9.3.6",
     "node-fetch": "^2.6.0",
